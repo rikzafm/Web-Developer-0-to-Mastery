@@ -1,6 +1,7 @@
 
 body{
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .zone {
@@ -20,7 +21,21 @@ body{
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
+.box:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 /* NAV */
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999; /*Made navbar always on top layer */
+}
+
 .main-nav{
     display: flex;
     list-style: none;
@@ -53,7 +68,13 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 60vh;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.cover{
+    width: 30rem;
 }
 
 /* Project Grid */
