@@ -19,9 +19,9 @@ const { firstName, lastName, age, eyeColor } = person;
 
 
 // Object properties
-const a = 'test';
-const b = true;
-const c = 789;
+// const a = 'test';
+// const b = true;
+// const c = 789;
 
 const okObj = {a, b, c};
 
