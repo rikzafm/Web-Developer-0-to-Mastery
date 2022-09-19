@@ -22,11 +22,11 @@ function logTodos (todo, i) {
 
 todos.forEach(logTodos);
 
-// var counterOne = 10;
-// while(counterOne > 0) {
-//     console.log(counterOne);
-//     counterOne--;
-// }
+var counterOne = 10;
+while(counterOne > 0) {
+    console.log(counterOne);
+    counterOne--;
+}
 
 var counterTwo = 10;
 do{
