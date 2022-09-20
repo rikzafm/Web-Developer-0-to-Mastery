@@ -14,13 +14,8 @@ const cleanRoom = (array) => {
         let lastNum = array[index-1];
         let nextNum = array[index+1];
 
-        console.log('inside of temp', temp);
-        console.log('current', element);
-        console.log('last num', lastNum);
-        console.log('next num', nextNum);
-
         if (element === lastNum || element === nextNum){
-            if(element != nextNum){
+            if(element != nextNum || typeof element != typeof nextNum){
                 temp.push(element);
                 newArray.push(temp);
                 temp = [];
