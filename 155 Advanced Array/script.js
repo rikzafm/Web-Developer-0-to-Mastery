@@ -11,7 +11,7 @@ console.log('double');
 
 const mapArray = array.map(num => num * 2);
 
-console.log(mapArray);
+console.log('map', mapArray);
 
 //filter
 
@@ -20,3 +20,11 @@ const filterArray = array.filter(num => {
 })
 
 const filterArray2 = array.filter(num => num > 5);
+
+console.log('filter', filterArray2)
+
+//REDUCE
+
+const reduceArray = array.reduce((accumulator, num) => {
+    return accumulator + num;
+}, 5);

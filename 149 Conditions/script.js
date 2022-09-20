@@ -27,6 +27,5 @@ function moveCommand(direction){
             break;
         default: 
             whatHappened = "Please input a valid direction"
-            
     }
 }
