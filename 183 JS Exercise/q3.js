@@ -8,8 +8,6 @@ const hexToRgb = (hex) => {
     return `RGB of Hex ${hex} is rgb(${r}, ${g}, ${b})`;
 };
 
-hexToRgb('23AF8E');
-
 const rgbToHex = (r, g, b) => {
     if (r > 255 || g > 255 || b > 255 ||
         r < 0 || g < 0 || b < 0){
@@ -31,31 +29,23 @@ const rgbToHex = (r, g, b) => {
         sb = sb.padStart(2, '0');
     }
 
-    console.log('sb', sb, typeof sb);
 
     let hex = sr + sg + sb;
-
-    console.log('hex', hex)
 
     return `Hex of rgb(${r}, ${g}, ${b}) is ${hex} `;
 
 };
 
-rgbToHex(66, 178, 0);
-
 const convert = (a, b, c) =>{
     let hexCheck = /[0-9A-Fa-f]{6}/g;
     
     if(hexCheck.test(a)){ //Check if Hex
-        console.log(hexCheck.test(a));
-        hexToRgb(a);
+        return hexToRgb(a);
         
     }
     else{
-        rgbToHex(a, b, c);
+        return rgbToHex(a, b, c);
     }
 
 };
 
-convert('23AF8E');
-// convert(66, 178, 0);

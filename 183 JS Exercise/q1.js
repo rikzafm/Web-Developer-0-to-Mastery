@@ -1,5 +1,6 @@
 // const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20];
 const array = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20, '4', '4', '3', '2', '2'];
+const array3 = [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20, '4', '4', '3', '2', '2', '6', 7, 8, 8, '90'];
 
 const cleanRoom = (array) => {
     array.sort((a, b) => {
@@ -37,3 +38,4 @@ const cleanRoom = (array) => {
 };
 
 cleanRoom(array);
+cleanRoom(array3);
